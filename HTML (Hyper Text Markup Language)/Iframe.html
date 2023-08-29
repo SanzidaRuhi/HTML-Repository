@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Iframe </title>
+</head>
+<body>
+	<h1> HTML Iframe </h1>
+
+	<iframe src="Iframe01.html"
+			name="frame01"
+			frameborder="0"
+			width="400"
+			height="300">
+		<!-- frameborder=0 means frameborder added and frameborder=1 means frameborder is not added -->
+	</iframe>
+
+	<br> <br>
+
+	<a href="Iframe02.html" target="frame01">
+		Click me
+	</a>
+
+	<hr>
+
+	<iframe src="Iframe02.html"></iframe>
+
+	<br> <br>
+
+	<iframe srcdoc="<h1> This is source document attribute </h1> <h3> HTML Complete Course </h3>"></iframe>
+</body>
+</html>

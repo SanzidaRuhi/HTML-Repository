@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> semantic Tags </title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.container{
+			width: 100%;
+			padding: 10px;
+			align-items: center;
+		}
+		header{
+			width: 100%;
+			background-color: rgb(80, 80, 80);
+			height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		h1{
+			padding: 15px;
+			text-align: center;
+		}
+		nav ul{
+			list-style: none;
+		}
+		nav ul li{
+			display: inline-block;
+		}
+		nav ul li a{
+			display: inline-block;
+			text-decoration: none;
+			color: white;
+			padding: 20px;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		.banner{
+			margin-top: 15px;
+			width: 100%;
+			height: 60vh;
+			background-color: royalblue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 40px;
+		}
+		.sec-1{
+			margin-top: 15px;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.circle{
+			height: 180px;
+			width: 180px;
+			background-color: salmon;
+			margin-left: 20px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+		}
+		.sec-2{
+			width: 100%;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		article{
+			float: left;
+			width: 50%;
+			height: 500px;
+			background-color: rgb(44, 34, 114);
+			color: white;
+			text-align: center;
+		}
+		aside{
+			width: 45%;
+			float: right;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+		}
+		.rightsidebar{
+			width: 100%;
+			height: 30%;
+			margin-bottom: 5%;
+			background-color: lightseagreen;
+		}
+		#lastsidebar{
+			margin-bottom: 0;
+		}
+		.sec-3{
+			width: 100%;
+			height: 300px;
+			display: flex;
+			justify-content: space-evenly;
+			align-content: center;
+			margin-top: 15px;
+		}
+		.grid{
+			width: 20%;
+			height: 100%;
+			background-color: magenta;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+		}
+		figure{
+			margin-top: 15px;
+		}
+		figcaption{
+			margin: 15px;
+			font-size: 25px;
+			justify-content: center;
+			display: flex;
+		}
+		details{
+			width: 100%;
+			margin: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			background-color: navajowhite;
+		}
+		summary{
+			width: 100%;
+			background-color: mediumaquamarine;
+		}
+		footer{
+			margin-top: 15px;
+			width: 100%
+			height: 200px;
+			background-color: pink;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1> HTML Semantic Tags </h1>
+
+	<div class="container">
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href=""> Home </a> 
+						<a href=""> About </a>
+						<a href=""> course </a>
+						<a href=""> Students </a>
+						<a href=""> Contact </a> 
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="banner">
+				<h1> Banner </h1>
+			</section>
+
+			<h1> Section 1 </h1>
+			<section class="sec-1">
+				<div class="circle"> Image 1 </div>
+				<div class="circle"> Image 2 </div>
+				<div class="circle"> Image 3 </div>
+				<div class="circle"> Image 4 </div>
+			</section>
+
+			<h1> Section 2 </h1>
+			<section class="sec-2">
+				<article>
+					<header>
+						<h1> Article </h1>
+					</header>
+					<h1>Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for locations worldwide.</h1>
+				</article>
+
+				<aside>
+					<h1> Aside </h1>
+					<div class="rightsidebar"></div>
+					<div class="rightsidebar"></div>
+					<div class="rightsidebar"></div>
+					<div class="rightsidebar"
+						 id="lastsidebar"></div>
+				</aside>
+			</section>
+
+			<h1> Section 3 </h1>
+			<section class="sec-3">
+				<div class="grid"> Grid 1 </div>
+				<div class="grid"> Grid 2 </div>
+				<div class="grid"> Grid 3 </div>
+				<div class="grid"> Grid 4 </div>
+			</section>
+
+			<figure>
+				<figcaption>
+					<mark> Complete HTML Course </mark>
+				</figcaption>
+				<img src="img/sub.jpg"
+					 width="100%"
+					 height="100%">
+			</figure>
+
+			<h1> Details & Summary Tags </h1>
+			<details>
+				<summary>
+					These are the details and summary tags 
+				</summary>
+				<p>
+					Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for locations worldwide.
+				</p>
+			</details>
+
+			<footer>
+				<h1> Footer </h1>
+			</footer>
+		</main>
+	</div>
+</body>
+</html>
